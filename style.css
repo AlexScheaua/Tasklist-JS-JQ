@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*codulmeu*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #edf0f1;
+  padding: 100px 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(148, 78, 191);
+  width: 100%;
+  height: 100px;
+  box-shadow: 2px 4px 10px #888;
+}
+
+#item {
+  font-size: 45px;
+  text-indent: 18px;
+  padding-right: 50px;
+  position: static;
+  background-color: rgba(255,255,255,0.0);
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(137, 137, 137);
+  width: 80%;
+  height: 60px;
+  margin-left: 10%;
+  margin-top: 18px;
+  color: rgb(88, 41, 117);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(137, 137, 137, 0.7);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(137, 137, 137, 0.7);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(137, 137, 137, 0.7);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(137, 137, 137, 0.7);
+}
+
+
+#add {
+
+  width: 12%;
+  height: 65px;
+  margin-top: 19px;
+  margin-left: 10px;
+  margin-right: 10%;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 60px;
+  color: rgb(148, 78, 191);
+  box-shadow: 0px 0px 10px 3px #666;
+}
+
+#add:active {
+  width: 12%;
+  margin-top: 22px;
+  height: 60px;
+  color: rgb(187, 113, 232);
+}
+
+.container {
+    height: 100vh;
+}
+
+.container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+ul.task {
+  width: 100%;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  font-size: 40px;
+  background-color: rgba(255,255,255,0.5);
+  margin: 5px;
+  padding: 0px 30px;
+  box-shadow: 2px 4px 10px #888;
+  border-radius: 25px;
+  color: #717171;
+}
+
+.editinput {
+	align-items: center;
+	min-height: 20px;
+	font-size: 30px;
+	background-color: rgba(220,220,220,0.5);
+	border: none;
+	padding: 0px 30px;
+	border-radius: 10px;
+	color: #717171;
+}
+
+#todo {
+  min-height: 40%;
+	max-height: 40%;
+  overflow-y: scroll;
+}
+
+
+.btnRem, .btnCompleted, .btnEdit {
+  background-color: rgba(0,0,0,0);
+  border:none;
+  height: 70px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0px 10px;
+  border-radius: 25px;
+}
+
+.btnRem {
+  color: rgba(196, 0, 0, 0.8);
+}
+
+.btnEdit {
+  color: rgba(113, 113, 113, 0.5);
+  padding: 0px 20px;
+}
+
+.btnCompleted {
+  color: rgba(8, 173, 0, 0.8);
+}
+
+.btnRem:hover {
+  background-color: rgba(196, 0, 0, 0.7);
+  box-shadow: 1px 2px 10px #888;
+  color: #edf0f1;
+  transition-duration: 0.4s;
+}
+
+.btnEdit:hover {
+  background-color: rgba(113, 113, 113, 0.6);
+  box-shadow: 1px 2px 10px #888;
+  color: #edf0f1;
+  transition-duration: 0.4s;
+}
+
+.btnCompleted:hover {
+  background-color: rgba(8, 173, 0, 0.7);
+  box-shadow: 1px 2px 10px #888;
+  color: #edf0f1;
+  transition-duration: 0.4s;
+}
